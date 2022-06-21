@@ -11,5 +11,5 @@ type TupleToNestedObject<A extends string[], T> = A extends [
       ? Record<A, TupleToNestedObject<R, T>>
       : Record<A, T>
     : ""
-  : A;
+  : T;
 export {};
